@@ -13,6 +13,6 @@ router
   .route("/:id")
   .get(taskController.getTask)
   .delete(taskController.deleteTask)
-  .patch(taskController.updateTask);
+  .put(taskController.updateTask);
 
 module.exports = router;
